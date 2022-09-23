@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  background-image: url("./asset/background1.jpg");
+}
+
+.navbar {
+  background-image: url("./asset/background1.jpg");
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
 }
 
 .App-logo {
@@ -35,4 +42,144 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.hero {
+  height:95vh;
+  padding-top: 25vh;
+  /* background-image: url("./asset/background.jpg"); */
+}
+
+.hero--name {
+  padding-top: 20px;
+}
+
+.hero--title{
+  padding-top: 20px;
+  
+}
+
+.about {
+  padding-top: 50px;
+  background-image: url("./asset/background1.jpg");
+  /* background-color: #b3c6cc; */
+  color: black;
+}
+
+.about--details {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.experience {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.experience--card {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.experience--gray {
+  color: grey;
+  font-size:medium;
+}
+
+.skillset {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+.skillset--list {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projects {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.projects--card {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project--gray {
+  color: gray;
+}
+
+.hero--hello {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer {
+  color: black;
+}
+
+.i-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.i-title-wrapper {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.i-title-item {
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  display: flex;
+}
+
+.i-scroll {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.download--resume {
+  /* padding-top: 250px; */
+  margin-top: 200px;
+}
+
+.footer--logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
