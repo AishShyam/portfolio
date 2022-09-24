@@ -47,6 +47,8 @@
 .hero {
   height:95vh;
   padding-top: 25vh;
+  position: relative;
+
   /* background-image: url("./asset/background.jpg"); */
 }
 
@@ -79,6 +81,7 @@
 .experience--card {
   padding-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -98,6 +101,7 @@
 .skillset--list {
   padding-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -111,6 +115,7 @@
 .projects--card {
   padding-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -173,8 +178,12 @@
 }
 
 .download--resume {
-  /* padding-top: 250px; */
-  margin-top: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 .footer--logo {

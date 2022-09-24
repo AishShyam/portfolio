@@ -1,5 +1,5 @@
-import locationLogo from '../asset/location2.png'
-import jobLogo from '../asset/laptop1.png'
+import locationLogo from '../asset/location1.png'
+import jobLogo from '../asset/laptop.png'
 import graduateLogo from '../asset/graduate.png'
 
 function About() {
