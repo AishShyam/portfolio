@@ -148,7 +148,7 @@
   animation: move 10s ease-in-out infinite alternate;
 }
 
-@keyframes move {
+/* @keyframes move {
   25% {
     transform: translateY(-50px);
   }
@@ -160,6 +160,18 @@
   }
   100% {
     transform: translateY(-200px);
+  }
+} */
+
+@keyframes move {
+  33% {
+    transform: translateY(-50px);
+  }
+  66% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(-150px);
   }
 }
 
@@ -192,3 +204,7 @@
   align-items: center;
   justify-content: center;
 }
+
+/* .experience--card--mphasis {
+  background-color: #3347 !important;
+} */
