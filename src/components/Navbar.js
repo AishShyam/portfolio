@@ -9,7 +9,7 @@ function MyNavbar() {
     <>
       <Navbar variant="light" className="navbar">
         <Container>
-            <Navbar.Brand href="/">Aishwarya C S</Navbar.Brand>
+            <Navbar.Brand href="/" className="navbar--name">Aishwarya C S</Navbar.Brand>
             <Nav>
             <Navbar.Brand href="https://www.linkedin.com/in/aishwarya-shyam/" target="_blank"><img src={linkedinLogo} width="40px"/></Navbar.Brand>
             <Navbar.Brand href="https://github.com/AishShyam" target="_blank"><img src={githubLogo} width="40px"/></Navbar.Brand>
