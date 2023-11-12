@@ -5,6 +5,8 @@ import reactLogo from '../asset/react.png'
 import solidityLogo from '../asset/solidity.png'
 import nodeLogo from '../asset/node.png'
 import gitLogo from '../asset/git.png'
+import mongoLogo from '../asset/mongo.jpg'
+
 
 
 
@@ -33,6 +35,10 @@ function Skillset() {
                 <div className="skillset-list--one">
                     <img src={nodeLogo} width="50px"/>
                     <p>NodeJS</p>
+                </div>
+                <div className="skillset-list--one">
+                    <img src={mongoLogo} width="50px"/>
+                    <p>Mongodb</p>
                 </div>
                 <div className="skillset-list--one">
                     <img src={solidityLogo} width="50px"/>

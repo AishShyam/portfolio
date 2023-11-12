@@ -13,7 +13,7 @@ function Experience() {
                 <Card.Body>
                     <Card.Title>Mphasis</Card.Title>
                     <div className='experience--gray'>
-                        <Card.Text>July 21'-Present</Card.Text>
+                        <Card.Text>July '21-Dec '22</Card.Text>
                         <Card.Text>Associate Software Developer</Card.Text>
                         <p>BlockchainCoE</p>
                     </div>

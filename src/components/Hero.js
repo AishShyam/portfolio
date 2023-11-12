@@ -13,9 +13,9 @@ function Hero() {
                     <h2 className='hero--name'>I'm Aishwarya</h2>
                     <div className="i-title">
                         <div className="i-title-wrapper">
-                            <div className="i-title-item"><h2>Developer</h2></div>
+                            <div className="i-title-item"><h2>Software Developer</h2></div>
                             <div className="i-title-item"><h2>Web Developer</h2></div>
-                            <div className="i-title-item"><h2>Blockchain Enthusiast</h2></div>
+                            <div className="i-title-item"><h2>Coding Enthusiast</h2></div>
                             <div className="i-title-item"><h2>Learner :)</h2></div>
                         </div>
                     </div>

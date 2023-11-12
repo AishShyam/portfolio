@@ -5,7 +5,18 @@ function Projects() {
         <>
         <div className="projects">
             <h4>Projects</h4>
-            <div className='projects--card'>                
+            <div className='projects--card'>   
+            <Card style={{ width: '18rem' }} className="project--card--corda">
+                <Card.Body>
+                <Card.Title>Diabetes Care WebApp</Card.Title>
+                    <div className='project--gray'>
+                        <div>
+                            <p>A web-based support app "GlucoCare" for people with type 2 diabetes built using the MERN stack as part of my master’s thesis.</p>
+                            <p>Tools used: React.js, React Routers, Node.js, Express.js, Mongodb Atlas, Mongoose, Postman</p>
+                        </div>
+                    </div>
+                </Card.Body>
+                </Card>             
                 <Card style={{ width: '18rem'}} className="project--card--nftmarketplace">
                 <Card.Body>
                     <Card.Title>NFT Marketplace</Card.Title>
