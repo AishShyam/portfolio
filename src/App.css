@@ -9,6 +9,28 @@
 
 }
 
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;       /* subtle border */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar-logo img {
+  width: 60%;
+  height: auto;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -213,3 +235,137 @@
 /* .experience--card--mphasis {
   background-color: #3347 !important;
 } */
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px 0;
+}
+
+/* Central vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #ccc;
+  transform: translateX(-50%);
+}
+
+/* Each timeline item */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+/* Left items */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+/* Right items */
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* Content card */
+.timeline-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.timeline-content img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+/* Circle connector */
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ccc;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 1px #ccc;
+  z-index: 1;
+}
+
+.timeline-item.left::after {
+  right: -10px;
+}
+
+.timeline-item.right::after {
+  left: -10px;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline {
+    margin: 20px auto;
+    padding: 10px 0;
+  }
+
+  /* Line goes to the left */
+  .timeline::before {
+    left: 30px;   /* move line to left edge */
+    transform: none;
+  }
+
+  /* Items full width */
+  .timeline-item {
+    width: 100%;
+    padding-left: 80px;   /* keep space so content doesn’t overlap line */
+    padding-right: 20px;
+    margin-bottom: 40px;
+  }
+
+  /* Both left + right items collapse into one column */
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+
+  /* Dots always align with line */
+  .timeline-item::after {
+    left: 22px;                  /* match line */
+    right: auto;
+    transform: none; /* keep dot centered on line */
+  }
+}
+
+.projects a {
+  color: black;
+  text-decoration: none;
+}
+
+.projects a:hover {
+  color: #333;
+}
+
+.timeline a {
+  color: black;              /* force black text */
+  text-decoration: none;     /* remove underline */
+  display: block;            /* so it covers the full card */
+}
+
+.timeline a:hover {
+  color: #333;               /* optional hover effect */
+}

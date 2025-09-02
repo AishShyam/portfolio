@@ -4,9 +4,11 @@ import javascriptLogo from '../asset/java-script.png'
 import reactLogo from '../asset/react.png'
 import solidityLogo from '../asset/solidity.png'
 import nodeLogo from '../asset/node.png'
-import gitLogo from '../asset/git.png'
+// import gitLogo from '../asset/git.png'
 import mongoLogo from '../asset/mongo.jpg'
-
+import pythonLogo from '../asset/python.png'
+import flaskLogo from '../asset/flask.png'
+import angularLogo from '../asset/angularjs.png'
 
 
 
@@ -30,23 +32,31 @@ function Skillset() {
                 </div>
                 <div className="skillset-list--one">
                     <img src={reactLogo} width="50px"/>
-                    <p>ReactJS</p>
+                    <p>React</p>
+                </div>
+                <div className="skillset-list--one">
+                    <img src={angularLogo} width="50px"/>
+                    <p>Angular</p>
                 </div>
                 <div className="skillset-list--one">
                     <img src={nodeLogo} width="50px"/>
                     <p>NodeJS</p>
                 </div>
                 <div className="skillset-list--one">
+                    <img src={flaskLogo} width="50px"/>
+                    <p>Flask</p>
+                </div>
+                <div className="skillset-list--one">
                     <img src={mongoLogo} width="50px"/>
                     <p>Mongodb</p>
                 </div>
                 <div className="skillset-list--one">
-                    <img src={solidityLogo} width="50px"/>
-                    <p>Solidity</p>
+                    <img src={pythonLogo} width="50px"/>
+                    <p>Python</p>
                 </div>
                 <div className="skillset-list--one">
-                    <img src={gitLogo} width="50px"/>
-                    <p>Git</p>
+                    <img src={solidityLogo} width="50px"/>
+                    <p>Solidity</p>
                 </div>
             </div>
         </div>

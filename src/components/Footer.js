@@ -12,7 +12,7 @@ function Footer() {
                 <div><a href="mailto: aishwarya.shyam5@gmail.com" target="_blank"><img src={emailLogo} width="40px"/></a></div>
             </div>
             <footer>
-                <small>Copyright © Aishwarya C S</small>
+                <small>Copyright © Aishwarya Shyam</small>
             </footer>
         </div>
         </>

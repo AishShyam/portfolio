@@ -6,6 +6,7 @@ function Projects() {
         <div className="projects">
             <h4>Projects</h4>
             <div className='projects--card'>   
+            <a href="https://github.com/AishShyam/GlucoCare" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
             <Card style={{ width: '18rem' }} className="project--card--corda">
                 <Card.Body>
                 <Card.Title>Diabetes Care WebApp</Card.Title>
@@ -16,7 +17,22 @@ function Projects() {
                         </div>
                     </div>
                 </Card.Body>
-                </Card>             
+                </Card>    
+                </a>
+                <a href="https://github.com/AishShyam/GlucoCare" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>      
+                <Card style={{ width: '18rem'}} className="project--card--nftmarketplace">
+                <Card.Body>
+                    <Card.Title>Task Manager</Card.Title>
+                    <div className='project--gray'>
+                        <div>
+                        <p>A simple task manager web app that allows users to create, view, update, and delete tasks.</p>
+                        <br></br>
+                        <p>Tools used: ReactJS, React Router, Node.js, Express.js, MongoDB Atlas, Mongoose, Postman</p>
+                        </div>
+                    </div>
+                </Card.Body>
+                </Card>
+                </a>
                 <Card style={{ width: '18rem'}} className="project--card--nftmarketplace">
                 <Card.Body>
                     <Card.Title>NFT Marketplace</Card.Title>
@@ -28,7 +44,7 @@ function Projects() {
                     </div>
                 </Card.Body>
                 </Card>
-                <Card style={{ width: '18rem' }} className="project--card--nftminter">
+                {/* <Card style={{ width: '18rem' }} className="project--card--nftminter">
                 <Card.Body>
                 <Card.Title>NFT Minter</Card.Title>
                     <div className='project--gray'>
@@ -38,8 +54,8 @@ function Projects() {
                         </div>
                     </div>
                 </Card.Body>
-                </Card>
-                <Card style={{ width: '18rem' }} className="project--card--corda">
+                </Card> */}
+                {/* <Card style={{ width: '18rem' }} className="project--card--corda">
                 <Card.Body>
                 <Card.Title>Invoice CorDapp</Card.Title>
                     <div className='project--gray'>
@@ -49,7 +65,7 @@ function Projects() {
                         </div>
                     </div>
                 </Card.Body>
-                </Card>
+                </Card> */}
             </div>
         </div>
         </>

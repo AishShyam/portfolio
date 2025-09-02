@@ -9,7 +9,7 @@ function About() {
             <h4>About me</h4>
             <div className="about--details">
                 <p><img src={locationLogo} width="20px"/> United Kingdom</p>
-                {/* <p><img src={jobLogo} width="20px"/> Associate Software Developer, Mphasis Limited</p> */}
+                <p><img src={jobLogo} width="20px"/> Software Engineer @ Open Science Tools</p>
                 {/* <p><img src={graduateLogo} width="20px" /> Information Science Grad, 2020</p> */}
                 <p><img src={graduateLogo} width="20px" /> University of Strathclyde, MSc Advanced Computer Science, 2023</p>
                 {/* <div className='about--objective'>
