@@ -86,32 +86,30 @@ function Certifications() {
         <section className="certifications" id="certifications">
             <h4>Certifications</h4>
 
-            <div className="certifications-grid">
+            <div className="certifications-list">
                 {certifications.map((certification) => (
                     <article
-                        className="certification-card"
+                        className="certification-item"
                         key={`${certification.title}-${certification.provider}`}
                     >
-                        <div className="certification-header">
+                        <div className="certification-main">
                             <h5>{certification.title}</h5>
-                            {certification.issued && (
-                                <span>{certification.issued}</span>
+
+                            <p className="certification-meta">
+                                {certification.provider}
+                                {certification.issued && ` • ${certification.issued}`}
+                            </p>
+
+                            <p className="certification-description">
+                                {certification.description}
+                            </p>
+
+                            {certification.credentialId && (
+                                <p className="certification-id">
+                                    Credential ID: {certification.credentialId}
+                                </p>
                             )}
                         </div>
-
-                        <p className="certification-provider">
-                            {certification.provider}
-                        </p>
-
-                        <p className="certification-description">
-                            {certification.description}
-                        </p>
-
-                        {certification.credentialId && (
-                            <p className="certification-id">
-                                Credential ID: {certification.credentialId}
-                            </p>
-                        )}
 
                         {certification.link && (
                             <a
