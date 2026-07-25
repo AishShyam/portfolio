@@ -13,6 +13,21 @@ function Footer() {
             </div>
             <footer>
                 <small>Copyright © Aishwarya Shyam</small>
+                <p className="footer-credits">
+                    Icons by{' '}
+                    <a href="https://icons8.com" target="_blank" rel="noopener noreferrer">
+                        Icons8
+                    </a>
+                    ,{' '}
+                    <a href="https://www.flaticon.com" target="_blank" rel="noopener noreferrer">
+                        Flaticon
+                    </a>
+                    {' '}and{' '}
+                    <a href="https://icon-icons.com" target="_blank" rel="noopener noreferrer">
+                        Icon-Icons
+                    </a>
+                    .
+                </p>
             </footer>
         </div>
         </>

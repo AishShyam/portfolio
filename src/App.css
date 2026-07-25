@@ -595,3 +595,18 @@
   }
 }
 
+
+.footer-credits {
+  margin: 8px 0 0;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.footer-credits a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-credits a:hover {
+  text-decoration: underline;
+}
