@@ -1,74 +1,146 @@
 import Card from 'react-bootstrap/Card';
 
+const projects = [
+    {
+        title: 'Job Search Copilot',
+        date: 'July 2026 – Present',
+        points: [
+            'Building an AI-powered platform that automates job discovery, resume tailoring, outreach drafting and application tracking while keeping users in control of important actions.',
+            'Designed provider-independent LLM workflows using LiteLLM, Playwright, Supabase and GitHub Actions for scalable job-search automation.',
+        ],
+        tools: ['Python', 'LiteLLM', 'Playwright', 'Supabase', 'GitHub Actions'],
+        link: 'https://github.com/AishShyam/JobSearchCopilot',
+    },
+    {
+        title: 'AI Blog-Writing Agent with Google ADK',
+        date: '2026',
+        points: [
+            'Built an AI agent that plans and writes blog content using Google ADK and Gemini.',
+            'Implemented a reasoning-and-action workflow that breaks a request into steps, generates a plan and produces the final article.',
+        ],
+        tools: ['Python', 'Google ADK', 'Gemini'],
+        link: '',
+    },
+    {
+        title: 'ReframeAI',
+        date: 'May 2026',
+        points: [
+            'Developed a full-stack reflection application that analyses user input for cognitive distortions and generates personalised CBT-based reframes.',
+            'Integrated an LLM API with a Flask backend and created a simple frontend for submitting and reviewing reflections.',
+        ],
+        tools: ['Python', 'Flask', 'OpenRouter API', 'HTML', 'CSS'],
+        link: 'https://github.com/AishShyam/ReframeAI',
+    },
+    {
+        title: 'Tic Tac Toe Plus',
+        date: '',
+        points: [
+            'Built a full-stack variation of tic-tac-toe where each player has three pieces and the game continues after the placement stage.',
+            'Added rules that allow players to move pieces horizontally or vertically while preventing diagonal movement.',
+        ],
+        tools: ['React', 'Flask', 'Python'],
+        link: '',
+    },
+    {
+        title: 'GlucoCare',
+        date: 'July 2023 – August 2023',
+        points: [
+            'Developed a full-stack diabetes support platform with health tracking, personalised recommendations and a community discussion forum.',
+            'Implemented REST APIs, JWT authentication and protected user workflows using React, Node.js, Express.js and MongoDB.',
+        ],
+        tools: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
+        link: 'https://github.com/AishShyam/GlucoCare',
+    },
+    {
+        title: 'Goodreads Review Rating Prediction',
+        date: '2023',
+        points: [
+            'Built machine-learning and deep-learning models to predict Goodreads review ratings from one to five using a dataset of approximately 900,000 reviews.',
+            'Preprocessed review text and compared SVM, LSTM, 1D CNN and RoBERTa approaches for text classification.',
+        ],
+        tools: [
+            'Python',
+            'Scikit-learn',
+            'TensorFlow/Keras',
+            'LSTM',
+            '1D CNN',
+            'RoBERTa',
+        ],
+        link: 'https://colab.research.google.com/drive/1zHqdYtPg2ym7lUrWxspoUR7LQcUs9Ufs',
+    },
+    {
+        title: 'University Distributed Information Platform',
+        date: 'February 2023 – April 2023',
+        points: [
+            'Designed a distributed information platform integrating student, course and departmental data across relational, XML and semantic models.',
+            'Developed SQL, XQuery and SPARQL queries for cross-domain reporting, validation and data access.',
+        ],
+        tools: ['MySQL', 'XML', 'XQuery', 'SPARQL', 'Protégé'],
+        link: '',
+    },
+    {
+        title: 'NFT Marketplace',
+        date: '2022',
+        points: [
+            'Built a decentralised marketplace with wallet-based authentication, NFT minting, listing, buying and ownership transfers.',
+            'Implemented Solidity smart contracts and integrated React, Ethers.js and IPFS for the frontend and decentralised asset storage.',
+        ],
+        tools: ['Solidity', 'React', 'Redux', 'Ethers.js', 'IPFS', 'MetaMask'],
+        link: '',
+    },
+    {
+        title: 'Solidity Smart Contract Suite',
+        date: '2022',
+        points: [
+            'Developed a collection of Ethereum smart contracts covering ERC-20 tokens, ERC-721 NFTs, wallets, ownership controls, mappings and token swaps.',
+            'Implemented reusable contract patterns for asset creation, transfers, access control and Ether transactions.',
+        ],
+        tools: ['Solidity', 'Ethereum', 'ERC-20', 'ERC-721', 'Remix'],
+        link: 'https://github.com/AishShyam/Solidity-examples',
+    },
+]
+
 function Projects() {
     return (
-        <>
-        <div className="projects">
+        <section className="projects" id="projects">
             <h4>Projects</h4>
-            <div className='projects--card'>   
-            <a href="https://github.com/AishShyam/GlucoCare" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-            <Card style={{ width: '18rem' }} className="project--card--corda">
-                <Card.Body>
-                <Card.Title>Diabetes Care WebApp</Card.Title>
-                    <div className='project--gray'>
-                        <div>
-                            <p>A web-based support app "GlucoCare" for people with type 2 diabetes built using the MERN stack as part of my master’s thesis.</p>
-                            <p>Tools used: React.js, React Routers, Node.js, Express.js, Mongodb Atlas, Mongoose, Postman</p>
-                        </div>
-                    </div>
-                </Card.Body>
-                </Card>    
-                </a>
-                <a href="https://github.com/AishShyam/GlucoCare" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>      
-                <Card style={{ width: '18rem'}} className="project--card--nftmarketplace">
-                <Card.Body>
-                    <Card.Title>Task Manager</Card.Title>
-                    <div className='project--gray'>
-                        <div>
-                        <p>A simple task manager web app that allows users to create, view, update, and delete tasks.</p>
-                        <br></br>
-                        <p>Tools used: ReactJS, React Router, Node.js, Express.js, MongoDB Atlas, Mongoose, Postman</p>
-                        </div>
-                    </div>
-                </Card.Body>
-                </Card>
-                </a>
-                <Card style={{ width: '18rem'}} className="project--card--nftmarketplace">
-                <Card.Body>
-                    <Card.Title>NFT Marketplace</Card.Title>
-                    <div className='project--gray'>
-                        <div>
-                        <p>Full stack decentralized app that lets users log in through cryptocurrency wallet and mint, list and buy NFTs.</p>
-                        <p>Tools used: Solidity, ReactJS, Hardhat, Ethers.js, IPFS, React Routers, Metamask</p>
-                        </div>
-                    </div>
-                </Card.Body>
-                </Card>
-                {/* <Card style={{ width: '18rem' }} className="project--card--nftminter">
-                <Card.Body>
-                <Card.Title>NFT Minter</Card.Title>
-                    <div className='project--gray'>
-                        <div>
-                            <p>Full stack Dapp that lets users log in through Metamask and mint NFTs on the Rinkeby testnet which is then viewable on OpenSea and other NFT platforms</p>
-                            <p>Tools used: Solidity, ReactJS, Remix, Moralis, OpenSea API</p>
-                        </div>
-                    </div>
-                </Card.Body>
-                </Card> */}
-                {/* <Card style={{ width: '18rem' }} className="project--card--corda">
-                <Card.Body>
-                <Card.Title>Invoice CorDapp</Card.Title>
-                    <div className='project--gray'>
-                        <div>
-                            <p>A three node network CorDapp that takes invoice data as input and creates an invoice asset. This asset can be transferred to another party on the network.</p>
-                            <p>Tools used: Corda, Gradle, Java, Apache Poi</p>
-                        </div>
-                    </div>
-                </Card.Body>
-                </Card> */}
+
+            <div className="projects--card">
+                {projects.map((project) => (
+                    <Card className="project-card" key={project.title}>
+                        <Card.Body>
+                            <div className="project-card-header">
+                                <Card.Title>{project.title}</Card.Title>
+                                {project.date && <span>{project.date}</span>}
+                            </div>
+
+                            <ul className="project-points">
+                                {project.points.map((point) => (
+                                    <li key={point}>{point}</li>
+                                ))}
+                            </ul>
+
+                            <div className="project-tools">
+                                {project.tools.map((tool) => (
+                                    <span key={tool}>{tool}</span>
+                                ))}
+                            </div>
+
+                            {project.link && (
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="project-link"
+                                >
+                                    View Project
+                                </a>
+                            )}
+                        </Card.Body>
+                    </Card>
+                ))}
             </div>
-        </div>
-        </>
+        </section>
     )
 }
 

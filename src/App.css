@@ -125,13 +125,61 @@
   background-color: white;
 }
 
+.skill-categories {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skill-category {
+  margin-top: 40px;
+}
+
+.skill-category h5 {
+  margin-bottom: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
 .skillset--list {
-  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.skillset-list--one {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillset-list--one img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.skillset-list--one p {
+  margin-top: 8px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .skillset--list {
+    gap: 20px 12px;
+  }
+
+  .skillset-list--one {
+    width: 80px;
+  }
+
+  .skillset-list--one img {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .projects {
@@ -140,16 +188,97 @@
 }
 
 .projects--card {
-  padding-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
 
-.project--gray {
-  color: gray;
+.project-card {
+  height: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.project-card .card-body {
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-header {
+  min-height: 72px;
+  margin-bottom: 16px;
+}
+
+.project-card-header .card-title {
+  margin-bottom: 6px;
+}
+
+.project-card-header span {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.project-points {
+  padding-left: 20px;
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 1.55;
+}
+
+.project-points li {
+  margin-bottom: 12px;
+}
+
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.project-tools span {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  font-size: 0.8rem;
+}
+
+.project-link {
+  align-self: flex-start;
+  display: inline-block;
+  margin-top: 18px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #212529;
+  color: white;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  background: #343a40;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .projects--card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects--card {
+    grid-template-columns: 1fr;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .hero--hello {
@@ -190,7 +319,7 @@
   }
 } */
 
-@keyframes move {
+/* @keyframes move {
   33% {
     transform: translateY(-50px);
   }
@@ -200,12 +329,34 @@
   100% {
     transform: translateY(-150px);
   }
+} */
+
+@keyframes move {
+  20% {
+    transform: translateY(-50px);
+  }
+
+  40% {
+    transform: translateY(-100px);
+  }
+
+  60% {
+    transform: translateY(-150px);
+  }
+
+  80% {
+    transform: translateY(-200px);
+  }
+
+  100% {
+    transform: translateY(-200px);
+  }
 }
 
 .i-title-item {
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: 100%;
   display: flex;
 }
 
@@ -318,6 +469,9 @@
 
 @media screen and (max-width: 768px) {
   .timeline {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     margin: 20px auto;
     padding: 10px 0;
   }
@@ -325,39 +479,27 @@
   /* Line goes to the left */
   .timeline::before {
     left: 30px;   /* move line to left edge */
-    transform: none;
+    transform: translateX(-50%);
   }
 
   /* Items full width */
-  .timeline-item {
-    width: 100%;
-    padding-left: 80px;   /* keep space so content doesn’t overlap line */
-    padding-right: 20px;
-    margin-bottom: 40px;
-  }
-
-  /* Both left + right items collapse into one column */
+  .timeline-item,
   .timeline-item.left,
   .timeline-item.right {
     left: 0;
+    width: 100%;
+    padding: 20px 16px 20px 60px;
     text-align: left;
   }
 
   /* Dots always align with line */
-  .timeline-item::after {
-    left: 22px;                  /* match line */
+  .timeline-item::after,
+  .timeline-item.left::after,
+  .timeline-item.right::after {
+    left: 30px;
     right: auto;
-    transform: none; /* keep dot centered on line */
+    transform: translateX(-50%);
   }
-}
-
-.projects a {
-  color: black;
-  text-decoration: none;
-}
-
-.projects a:hover {
-  color: #333;
 }
 
 .timeline a {
@@ -369,3 +511,102 @@
 .timeline a:hover {
   color: #333;               /* optional hover effect */
 }
+
+.timeline-description {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.timeline-description p {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.timeline-description li {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.certifications {
+  padding: 50px 20px;
+}
+
+.certifications-grid {
+  max-width: 1200px;
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.certification-card {
+  height: 100%;
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: white;
+  text-align: left;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.certification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.certification-header h5 {
+  margin: 0;
+}
+
+.certification-header span {
+  flex-shrink: 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.certification-provider {
+  margin: 10px 0 8px;
+  font-weight: 600;
+}
+
+.certification-description {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.certification-id {
+  overflow-wrap: anywhere;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.certification-link {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+  .certifications-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certification-header {
+    display: block;
+  }
+
+  .certification-header span {
+    display: block;
+    margin-top: 6px;
+  }
+}
+
