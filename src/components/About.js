@@ -1,5 +1,4 @@
 import locationLogo from '../asset/location1.png'
-import jobLogo from '../asset/laptop.png'
 import graduateLogo from '../asset/graduate.png'
 
 function About() {

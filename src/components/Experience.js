@@ -1,4 +1,3 @@
-import Card from 'react-bootstrap/Card';
 import amazonLogo from '../asset/amazon.png'
 import mphasisLogo from '../asset/mphasis.png'
 import bachelorsLogo from '../asset/bachelors.png'

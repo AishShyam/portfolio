@@ -7,9 +7,9 @@ function Footer() {
         <>
         <div className="footer">
             <div className='footer--logo'>
-                <div><a href="https://www.linkedin.com/in/aishwarya-shyam/" target="_blank"><img src={linkedinLogo} width="40px"/></a></div>
-                <div><a href="https://github.com/AishShyam" target="_blank"><img src={githubLogo} width="40px"/></a></div>
-                <div><a href="mailto: aishwarya.shyam5@gmail.com" target="_blank"><img src={emailLogo} width="40px"/></a></div>
+                <div><a href="https://www.linkedin.com/in/aishwarya-shyam/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} width="40px" alt='Linkedin'/></a></div>
+                <div><a href="https://github.com/AishShyam" target="_blank" rel="noopener noreferrer"><img src={githubLogo} width="40px" alt='GitHub'/></a></div>
+                <div><a href="mailto: aishwarya.shyam5@gmail.com" target="_blank" rel="noopener noreferrer"><img src={emailLogo} width="40px" alt='Email'/></a></div>
             </div>
             <footer>
                 <small>Copyright © Aishwarya Shyam</small>

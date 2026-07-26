@@ -22,7 +22,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className='download--resume'>                
-                    <a href={AishwaryaShyam} download="AishwaryaShyam" target='_blank'>
+                    <a href={AishwaryaShyam} download="AishwaryaShyam">
                         <img src={downloadLogo} width="40px" alt="Download resume"/>
                     </a>
                     <div className='downloadresume'><p>Download Resume</p></div>                             
