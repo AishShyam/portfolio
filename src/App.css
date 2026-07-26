@@ -20,7 +20,7 @@ img {
 }
 
 /* App and page background */
-.App {
+/* .App {
   min-height: 100vh;
   color: #18181b;
   text-align: center;
@@ -44,6 +44,13 @@ img {
     );
   background-attachment: scroll;
   background-repeat: no-repeat;
+} */
+
+.App {
+  min-height: 100vh;
+  color: #18181b;
+  text-align: center;
+  background: #ececec;
 }
 
 /* Navbar */
