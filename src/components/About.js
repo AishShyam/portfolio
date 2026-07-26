@@ -1,11 +1,17 @@
 import locationLogo from '../asset/location1.png'
 import graduateLogo from '../asset/graduate.png'
+import me from '../asset/me.PNG'
 
 function About() {
     return (
         <>
         <div className="about" id="about">
             <h4>About me</h4>
+            <img
+                src={me}
+                alt="Aishwarya Shyam"
+                className="about-profile-image"
+            />
             <div className="about--details">
                 <p><img src={locationLogo} width="20px" alt="Location"/> Bangalore, India</p>
                 {/* <p><img src={jobLogo} width="20px" alt="Job"/> Software Engineer @ Open Science Tools</p> */}

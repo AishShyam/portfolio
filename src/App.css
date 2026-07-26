@@ -1,3 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.App {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .App {
   text-align: center;
   min-height: 100vh;
@@ -29,9 +49,26 @@
 
 
 .navbar {
+  width: 100%;
+  max-width: 100%;
   background: rgba(248, 250, 252, 0.9);
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.navbar-content {
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.navbar--name,
+.navbar-toggler {
+  flex-shrink: 0;
 }
 
 .navbar-logo {
@@ -110,6 +147,26 @@
   padding-top: 50px;
   background-color: white;
   color: black;
+}
+
+.about-profile-image {
+  display: block;
+  width: 220px;
+  height: 220px;
+  margin: 24px auto 8px;
+  border: 3px solid #e0e0e0;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+  .about-profile-image {
+    width: 170px;
+    height: 170px;
+    margin-top: 20px;
+  }
 }
 
 .projects,
@@ -495,6 +552,53 @@
 }
 
 @media screen and (max-width: 768px) {
+  .navbar-container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .navbar-content {
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .navbar-sections {
+    width: 100%;
+    align-items: center;
+    padding-top: 12px;
+    text-align: center;
+  }
+
+  .navbar-socials {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 0 12px;
+  }
+
+  .navbar-socials .navbar-brand {
+    margin: 0;
+    padding: 4px;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 80px 16px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .download--resume {
+    position: static;
+    margin: 40px auto 0;
+  }
+
   .timeline {
     width: 100%;
     max-width: 100%;
@@ -632,12 +736,47 @@
 }
 
 @media screen and (max-width: 600px) {
+  .certifications {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    text-align: left;
+  }
+
+  .certifications-list,
+  .certification-subsection,
+  .research-list,
+  .presentation-list,
   .certification-item {
-    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .certification-item {
+    flex-direction: column;
+    gap: 0;
+    text-align: left;
+    overflow-wrap: anywhere;
+  }
+
+  .certification-main {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .certification-item h5,
+  .certification-meta,
+  .certification-description,
+  .certification-id,
+  .certification-link {
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
 
   .certification-link {
     display: inline-block;
+    align-self: flex-start;
     margin-top: 12px;
   }
 }

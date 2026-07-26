@@ -12,29 +12,33 @@ import emailLogo from '../asset/email.png'
 function MyNavbar() {
   return (
     <>
-      <Navbar variant="light" className="navbar">
-        <Container>
+      <Navbar variant="light" expand="md" className="navbar">
+        <Container className="navbar-container">
             <Navbar.Brand href="/" className="navbar--name">
               <div className="navbar-logo">
                 <img src={programmerLogo} alt="Aishwarya Shyam portfolio" />
               </div>
             </Navbar.Brand>
 
-            <Nav className="navbar-sections">
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#experience">Experience</Nav.Link>
-              <Nav.Link href="#skills">Skills</Nav.Link>
-              <Nav.Link href="#projects">Projects</Nav.Link>
-              <Nav.Link href="#certifications">Certifications and Research</Nav.Link>
-           </Nav>
+            <Navbar.Toggle aria-controls="portfolio-navbar" />
 
-            <Nav className="navbar-socials">
-              <Navbar.Brand href="https://www.linkedin.com/in/aishwarya-shyam/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} width="40px" alt="LinkedIn"/></Navbar.Brand>
-              <Navbar.Brand href="https://github.com/AishShyam" target="_blank" rel="noopener noreferrer"><img src={githubLogo} width="40px" alt="GitHub"/></Navbar.Brand>
-              <Navbar.Brand href="https://leetcode.com/u/aishshyam/" target="_blank" rel="noopener noreferrer"><img src={leetcodeLogo} width="40px" alt="LeetCode"/></Navbar.Brand>
-              <Navbar.Brand href="https://medium.com/@aishshyam" target="_blank" rel="noopener noreferrers"><img src={mediumLogo} width="40px" alt="Medium"/></Navbar.Brand>
-              <Navbar.Brand href="mailto:aishshyam@gmail.com" target="_blank" rel="noopener noreferrers"><img src={emailLogo} width="40px" alt="Email"/></Navbar.Brand>
-            </Nav>
+            <Navbar.Collapse id="portfolio-navbar" className="navbar-content">
+              <Nav className="navbar-sections">
+                <Nav.Link href="#about">About</Nav.Link>
+                <Nav.Link href="#experience">Experience</Nav.Link>
+                <Nav.Link href="#skills">Skills</Nav.Link>
+                <Nav.Link href="#projects">Projects</Nav.Link>
+                <Nav.Link href="#certifications">Certifications and Research</Nav.Link>
+              </Nav>
+
+              <Nav className="navbar-socials">
+                <Navbar.Brand href="https://www.linkedin.com/in/aishwarya-shyam/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} width="40px" alt="LinkedIn"/></Navbar.Brand>
+                <Navbar.Brand href="https://github.com/AishShyam" target="_blank" rel="noopener noreferrer"><img src={githubLogo} width="40px" alt="GitHub"/></Navbar.Brand>
+                <Navbar.Brand href="https://leetcode.com/u/aishshyam/" target="_blank" rel="noopener noreferrer"><img src={leetcodeLogo} width="40px" alt="LeetCode"/></Navbar.Brand>
+                <Navbar.Brand href="https://medium.com/@aishshyam" target="_blank" rel="noopener noreferrer"><img src={mediumLogo} width="40px" alt="Medium"/></Navbar.Brand>
+                <Navbar.Brand href="mailto:aishshyam@gmail.com" target="_blank" rel="noopener noreferrer"><img src={emailLogo} width="40px" alt="Email"/></Navbar.Brand>
+              </Nav>
+            </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
