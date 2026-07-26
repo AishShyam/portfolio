@@ -6,6 +6,7 @@ import linkedinLogo from '../asset/linkedin.png'
 import leetcodeLogo from '../asset/leetcode2.png'
 import mediumLogo from '../asset/medium2.png'
 import programmerLogo from '../asset/programmer.png'
+import emailLogo from '../asset/email.png'
 
 
 function MyNavbar() {
@@ -32,6 +33,7 @@ function MyNavbar() {
               <Navbar.Brand href="https://github.com/AishShyam" target="_blank" rel="noopener noreferrer"><img src={githubLogo} width="40px" alt="GitHub"/></Navbar.Brand>
               <Navbar.Brand href="https://leetcode.com/u/aishshyam/" target="_blank" rel="noopener noreferrer"><img src={leetcodeLogo} width="40px" alt="LeetCode"/></Navbar.Brand>
               <Navbar.Brand href="https://medium.com/@aishshyam" target="_blank" rel="noopener noreferrers"><img src={mediumLogo} width="40px" alt="Medium"/></Navbar.Brand>
+              <Navbar.Brand href="mailto:aishshyam@gmail.com" target="_blank" rel="noopener noreferrers"><img src={emailLogo} width="40px" alt="Email"/></Navbar.Brand>
             </Nav>
         </Container>
       </Navbar>

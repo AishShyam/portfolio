@@ -13,7 +13,7 @@ const projects = [
     },
     {
         title: 'AI Blog-Writing Agent with Google ADK',
-        date: '2026',
+        date: 'July 2026',
         points: [
             'Built an AI agent that plans and writes blog content using Google ADK and Gemini.',
             'Implemented a reasoning-and-action workflow that breaks a request into steps, generates a plan and produces the final article.',
@@ -33,7 +33,7 @@ const projects = [
     },
     {
         title: 'Tic Tac Toe Plus',
-        date: '',
+        date: 'April 2026',
         points: [
             'Built a full-stack variation of tic-tac-toe where each player has three pieces and the game continues after the placement stage.',
             'Added rules that allow players to move pieces horizontally or vertically while preventing diagonal movement.',
@@ -53,7 +53,7 @@ const projects = [
     },
     {
         title: 'Goodreads Review Rating Prediction',
-        date: '2023',
+        date: 'March 2023 – April 2023',
         points: [
             'Built machine-learning and deep-learning models to predict Goodreads review ratings from one to five using a dataset of approximately 900,000 reviews.',
             'Preprocessed review text and compared SVM, LSTM, 1D CNN and RoBERTa approaches for text classification.',
@@ -80,7 +80,7 @@ const projects = [
     },
     {
         title: 'NFT Marketplace',
-        date: '2022',
+        date: 'March 2022 – May 2022',
         points: [
             'Built a decentralised marketplace with wallet-based authentication, NFT minting, listing, buying and ownership transfers.',
             'Implemented Solidity smart contracts and integrated React, Ethers.js and IPFS for the frontend and decentralised asset storage.',

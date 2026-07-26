@@ -81,10 +81,68 @@ const certifications = [
     },
 ]
 
+const research = [
+    {
+        title: 'Type 2 Diabetes Support App',
+        type: "Master's Dissertation",
+        institution: 'University of Strathclyde',
+        published: 'August 2023',
+        description:
+            'Designed and evaluated a web-based support application for people with type 2 diabetes, combining health tracking, personalised guidance and a community discussion forum using the MERN stack.',
+        link: 'https://drive.google.com/file/d/110B_wVK9FCnteYv3Pw1pGxVUhQEF0EXF/view?usp=drive_link',
+        linkLabel: 'View Dissertation',
+    },
+    {
+        title: 'Soil, Water and Air Quality Monitoring System using IoT',
+        type: 'Research Publication',
+        institution:
+            'International Research Journal of Engineering and Technology',
+        published: 'February 2020',
+        description:
+            'Co-authored a research paper proposing an IoT-based system that uses Raspberry Pi and environmental sensors to monitor soil, water and air quality and send alerts when readings fall outside expected thresholds.',
+        link: 'https://www.irjet.net/archives/V7/i2/IRJET-V7I293.pdf',
+        linkLabel: 'View Publication',
+    },
+    {
+        title:
+            'An IoT Based System to Monitor Soil, Water and Air Quality for Better Living',
+        type: 'Conference Paper',
+        institution:
+            'International Conference on Recent Trends in Computer Science and Information Technology',
+        published: 'June 2020',
+        description:
+            'Presented an IoT-based environmental monitoring system using Raspberry Pi, sensors, Telegram notifications and ThingSpeak to collect and communicate soil, water and air-quality readings.',
+        link: 'https://www.ijcresit.in/proceedings',
+        linkLabel: 'View Proceedings',
+    },
+]
+
+const presentations = [
+    {
+        title: 'Soil, Water and Air Monitoring System',
+        event: 'Academic Project Presentation',
+        presented: '2020',
+        description:
+            'Presented an IoT-based environmental monitoring system that uses Raspberry Pi, Python and multiple sensors to measure soil, water and air quality, automate water pumping and send Telegram alerts.',
+        link: 'https://docs.google.com/presentation/d/1mSZwLzfzQozpju4Og_JuQLh4oCSRdrGpkYKecLtAoy4/edit#slide=id.p',
+        linkLabel: 'View Presentation',
+    },
+    {
+        title:
+            'Enhanced Human Face Recognition Using LBPH Descriptor, Multi-KNN, and Back-Propagation Neural Network',
+        event: 'Academic Technical Presentation',
+        presented: '2019',
+        description:
+            'Presented an enhanced face-recognition approach combining LBPH feature extraction, Multi-KNN classification and a back-propagation neural network to improve recognition accuracy.',
+        link: 'https://drive.google.com/file/d/1Dk8ZZ52_a1ApswtfbOk-eFyI3AfSAdZL/view?ths=true',
+        linkLabel: 'View Presentation',
+    },
+]
+
 function Certifications() {
     return (
         <section className="certifications" id="certifications">
-            <h4>Certifications</h4>
+            <h4>Certifications and Research</h4>
 
             <div className="certifications-list">
                 {certifications.map((certification) => (
@@ -123,6 +181,78 @@ function Certifications() {
                         )}
                     </article>
                 ))}
+            </div>
+
+            <div className="certification-subsection">
+                <h5 className="certification-subheading">Research</h5>
+
+                <div className="research-list">
+                    {research.map((item) => (
+                        <article
+                            className="certification-item"
+                            key={`${item.title}-${item.institution}`}
+                        >
+                            <div className="certification-main">
+                                <h5>{item.title}</h5>
+
+                                <p className="certification-meta">
+                                    {[item.type, item.institution, item.published]
+                                        .filter(Boolean)
+                                        .join(' • ')}
+                                </p>
+
+                                <p className="certification-description">
+                                    {item.description}
+                                </p>
+                            </div>
+
+                            <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="certification-link"
+                            >
+                                {item.linkLabel}
+                            </a>
+                        </article>
+                    ))}
+                </div>
+            </div>
+
+            <div className="certification-subsection">
+                <h5 className="certification-subheading">Presentations</h5>
+
+                <div className="presentation-list">
+                    {presentations.map((item) => (
+                        <article
+                            className="certification-item"
+                            key={`${item.title}-${item.event}`}
+                        >
+                            <div className="certification-main">
+                                <h5>{item.title}</h5>
+
+                                <p className="certification-meta">
+                                    {[item.event, item.presented]
+                                        .filter(Boolean)
+                                        .join(' • ')}
+                                </p>
+
+                                <p className="certification-description">
+                                    {item.description}
+                                </p>
+                            </div>
+
+                            <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="certification-link"
+                            >
+                                {item.linkLabel}
+                            </a>
+                        </article>
+                    ))}
+                </div>
             </div>
         </section>
     )
