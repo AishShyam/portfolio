@@ -19,7 +19,7 @@ const projects = [
             'Implemented a reasoning-and-action workflow that breaks a request into steps, generates a plan and produces the final article.',
         ],
         tools: ['Python', 'Google ADK', 'Gemini'],
-        link: '',
+        link: 'https://github.com/AishShyam/blog-agent',
     },
     {
         title: 'ReframeAI',
