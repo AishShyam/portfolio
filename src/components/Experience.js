@@ -46,10 +46,8 @@ function Experience() {
                     <p>Software Developer</p>
                     <ul className="timeline-description">
                     <li>
-                        Led end-to-end development of a motor insurance platform using
-                        React, TypeScript and Node.js,
-                        delivering a complete digital purchase journey from prototype to
-                        policy issuance.
+                        Built a motor insurance platform using React, TypeScript and Node.js,
+                        supporting the complete purchase journey from quotation to policy issuance.
                     </li>
                     <li>
                         Integrated 15+ RESTful APIs across distributed microservices,
