@@ -4,6 +4,7 @@ import bachelorsLogo from '../asset/bachelors.png'
 import strathclydeLogo from '../asset/strathclyde.png'
 import OSTLogo from '../asset/OSTlogo.jpg'
 import RTCLogo from '../asset/rtc.jpg'
+import ejyleLogo from '../asset/ejyle.jpg'
 
 function Experience() {
     return (
@@ -36,6 +37,29 @@ function Experience() {
             </div>
             </div> */}
             <div className="timeline" id="experience">
+
+            <div className="timeline-item left">
+                <div className="timeline-content">
+                    <img src={ejyleLogo} alt="Ejyle" />
+                    <p>2026 &ndash; Present</p>
+                    <h5>Ejyle</h5>
+                    <p>Software Developer</p>
+                    <ul className="timeline-description">
+                    <li>
+                        Led end-to-end development of a motor insurance platform using
+                        React, TypeScript and Node.js,
+                        delivering a complete digital purchase journey from prototype to
+                        policy issuance.
+                    </li>
+                    <li>
+                        Integrated 15+ RESTful APIs across distributed microservices,
+                        backend-for-frontend and third-party systems,
+                        enabling seamless quotation, policy management, underwriting and
+                        payment workflows.
+                    </li>
+                    </ul>
+                </div>
+            </div>
 
             <div className="timeline-item right">
                 <div className="timeline-content">

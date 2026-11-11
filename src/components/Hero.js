@@ -1,6 +1,6 @@
 import programmerLogo from '../asset/programmer.png'
 import downloadLogo from '../asset/download.png'
-import AishwaryaShyam from "../document/AishwaryaShyam.pdf"
+import AishwaryaShyamNov2026 from "../document/AishwaryaShyam_Nov2026.pdf"
 
 
 function Hero() {
@@ -22,7 +22,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className='download--resume'>                
-                    <a href={AishwaryaShyam} download="AishwaryaShyam">
+                    <a href={AishwaryaShyamNov2026} download="AishwaryaShyam_Nov2026.pdf">
                         <img src={downloadLogo} width="40px" alt="Download resume"/>
                     </a>
                     <div className='downloadresume'><p>Download Resume</p></div>                             
